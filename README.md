@@ -11,12 +11,12 @@ $ git pull
 
 $ git checkout [自分のブランチ]
 
-$ git rebase master
+$ git reset master
 
 
 ここで編集
 
-$ git add -a
+$ git add -A
 
 $ git commit -m "コミットメッセージ"
 
