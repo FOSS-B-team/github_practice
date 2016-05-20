@@ -20,7 +20,7 @@ $ git add -a
 
 $ git commit -m "コミットメッセージ"
 
-$ git push 
+$ git push -f
 
 
 その後　プルリクエストを送る
