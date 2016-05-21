@@ -89,3 +89,38 @@ Applying: コミットメッセージ
 $ git status
 
 からやり直し
+
+#### push時のconflict
+> $ git push
+
+> To git@github.com:FOSS-B-team/github_practice.git
+
+>  ! [rejected]        tkbtk-kic -> tkbtk-kic (non-fast-forward)
+
+みたいな感じで失敗することがあると思います。
+
+その時の対処法
+
++ 強制プッシュ
+
+$ git push -f
+
+で強制プッシュ
+
++ 丁寧にmergeさせる
+
+$ git pull
+
+するとconflict解消モードみたいになります
+
+$ git status
+
+でファイル確認して編集
+
+$ git add +A
+
+$ git commit  (コミットコメントはデフォルトでつく)
+
+$ git push
+
+で解決するだろう　多分
