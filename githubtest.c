@@ -2,8 +2,7 @@
 
 int main(void)
 {
-int i = 2;
-printf("%d", i);
+  int i = 2;
   char ope; //演算子を識別するため
   float x, y; //数字を入力する 小数点対応させるのなら 
 
