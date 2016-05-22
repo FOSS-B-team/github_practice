@@ -20,23 +20,3 @@ int main(void)
   /* 演算子によって異なる処理をする */
   
 }
-
-#include<stdio.h>
-
-int main()
-{
- int a;
- int b;
- int c;
- printf("引き算の計算をします\n");
- printf("一つ目の数字を入力してください\n");
- scanf("%d",&a);
-
- printf("二つ目の数字を入力してください");
- scanf("%d",&b);
-
- c=a-b;
- printf("%d-%d=%d\n",a,b,c);
-}
-~                                                                               
-~       
