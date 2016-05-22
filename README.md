@@ -52,6 +52,8 @@ $ git rebase master
 
 $ git push
 
+プルリクエストを送る
+
 ## 初心者向けと、理想の違い
 
 + pull requestの時にconflictが起きにくい
@@ -117,7 +119,7 @@ $ git status
 
 でファイル確認して編集
 
-$ git add +A
+$ git add -A
 
 $ git commit  (コミットコメントはデフォルトでつく)
 
