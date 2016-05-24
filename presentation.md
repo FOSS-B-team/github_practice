@@ -11,7 +11,7 @@
   + リポジトリが一つのほうがissuesの共有とかがやりやすいとと思ったため（髙畑）
 
 + **作業はどのように進めているか？**
-　+ pull-rebase-変更-add-commit-push-pullリクエスト(Yamashita)  
+  + pull-rebase-変更-add-commit-push-pullリクエスト(Yamashita)  
 + **どんなトラブルに遭遇したか？どのようにトラブルを解決したか？**
   + ローカルのmasterファイルを変更してしまった.  
 　　+git checkout -- ファイル名　で以前の状態にもどった.(Yamashita)  
