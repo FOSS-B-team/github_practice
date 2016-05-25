@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 /* プロトタイプ宣言 */
+void tashizan(void);
 void hikizan(void);
 
 int main(void)
@@ -9,21 +10,21 @@ int main(void)
   int f = 1; //終了フラグ
 
   do{
-    printf("計算したい演算を選んでください(+,-,*,/):");
+    printf("計算したい演算を選んでください( +, -, *, / ):");
     ope = getchar();
-    
+    while( getchar() != '\n');
     switch(ope){
       case '+':
-           printf("+\n");
+           tashizan();
         break;
       case '-':
            hikizan();
         break;
       case '*':
-            printf("*\n");
+            printf("未実装\n");
         break;
       case '/':
-            printf("/\n");
+            printf("未実装\n");
         break;
       default:
         printf("間違った演算子です\n");
@@ -32,14 +33,32 @@ int main(void)
 
     printf("もう一度する？(する→1, しない→0):");
     scanf("%d", &f);
+    (void)getchar();
 
   }while(f);
 
 }
 
+/*** 足し算関数
+ *  name tashizan
+ *  Author tkbtk-kic
+ ***/
+void tashizan(void)
+{
+ int a = 0;
+ int b = 0;
+ printf("一つ目の数字を入力してください:");
+ scanf("%d",&a);
+ printf("二つ目の数字を入力してください:");
+ scanf("%d",&b);
+
+ printf("%d+%d=%d\n",a,b, a+b);
+}
+
+
 /*** 引き算関数
  * name hikizan
- * Autor: Yamashita
+ * Author: Yamashita
  */
 void hikizan(void)
 {
