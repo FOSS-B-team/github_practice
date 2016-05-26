@@ -51,9 +51,10 @@ void tashizan(void)
  int b = 0;
  printf("一つ目の数字を入力してください:");
  scanf("%d",&a);
+    while( getchar() != '\n');
  printf("二つ目の数字を入力してください:");
  scanf("%d",&b);
-
+    while( getchar() != '\n');
  printf("%d+%d=%d\n",a,b, a+b);
 }
 
