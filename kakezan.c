@@ -1,5 +1,10 @@
+/*** kakezan module
+ * Author: yokami
+ ***/
+
 #include<stdio.h>
-int main()
+#include "kakezan.h"
+void kakezan()
 {
 	float a,b,c;
 	scanf("%f,%f",&a,&b);

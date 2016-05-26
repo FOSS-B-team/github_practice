@@ -1,4 +1,6 @@
 #include<stdio.h>
+/* リンクヘッダ */
+#include "kakezan.h"
 
 /* プロトタイプ宣言 */
 void tashizan(void);
@@ -21,7 +23,7 @@ int main(void)
            hikizan();
         break;
       case '*':
-            printf("未実装\n");
+          kakezan();
         break;
       case '/':
             printf("未実装\n");
