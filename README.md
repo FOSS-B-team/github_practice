@@ -42,13 +42,9 @@ $ git add -A
 
 $ git commit -m "コミットメッセージ"
 
-$ git checkout master
+$ git pull origin  master
 
-$ git pull
-
-$ git checkout [自分のブランチ]
-
-$ git rebase master
+$ git status（コンフリクト起きてないか確認)
 
 $ git push
 
@@ -58,6 +54,7 @@ $ git push
 
 + pull requestの時にconflictが起きにくい
 + rebase はreset --hardと違いconflictが起きる可能性があるのでちゃんと解決してね
++ pull origin masterは編集中に誰かがmasterをいじってたらコンフリクト起きるかも
 + push時にconflictが起きる可能性がなくはないかもしれない
 
 ## Conflictの解消
@@ -126,3 +123,14 @@ $ git commit  (コミットコメントはデフォルトでつく)
 $ git push
 
 で解決するだろう　多分
+
+## pullの時のconflict
+
+$ git status で確認, 該当ファイルをいい感じに編集
+
+$ git add <該当ファイル>
+
+$ git commit - コミットメッセージは自動でつく
+
+なんかまだ　conflictあるよとか言われてなければ終わり。
+なんかダメっぽかったら　$ git statusから
