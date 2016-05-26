@@ -5,14 +5,9 @@ https://github.com/framgia/coding-standards/blob/master/ja/git/flow.md
 
 ## 初心者向け
 
-$ git checkout master
+$ git checkout <自分のブランチ>
 
-$ git pull
-
-$ git checkout [自分のブランチ]
-
-$ git reset --hard master
-
+$ git reset origin/master
 
 ここで編集
 
@@ -28,13 +23,9 @@ $ git push -f
 
 ## 理想のWorkFlow
 
-$ git checkout master
-
-$ git pull
-
 $ git checkout [自分のブランチ]
 
-$ git rebase master
+$ git rebase origin/master
 
  編集作業
  
@@ -42,7 +33,7 @@ $ git add -A
 
 $ git commit -m "コミットメッセージ"
 
-$ git pull origin  master
+$ git pull origin master
 
 $ git status（コンフリクト起きてないか確認)
 
