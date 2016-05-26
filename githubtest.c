@@ -5,6 +5,7 @@
 /* プロトタイプ宣言 */
 void tashizan(void);
 void hikizan(void);
+void warizan(void);
 
 int main(void)
 {
@@ -26,7 +27,7 @@ int main(void)
           kakezan();
         break;
       case '/':
-            printf("未実装\n");
+            warizan();
         break;
       default:
         printf("間違った演算子です\n");
