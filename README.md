@@ -7,7 +7,7 @@ https://github.com/framgia/coding-standards/blob/master/ja/git/flow.md
 
 $ git checkout <自分のブランチ>
 
-$ git reset origin/master
+$ git reset --hard origin/master
 
 ここで編集
 
