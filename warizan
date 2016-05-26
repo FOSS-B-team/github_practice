@@ -1,0 +1,19 @@
+/*** 割り算関数
+ * name warizan
+ * Author: Oka
+ */
+void warizan(void)
+{
+ int a;
+ int b;
+ int c;
+ printf("割り算の計算をします\n");
+ printf("一つ目の数字を入力してください\n");
+ scanf("%d",&a);
+
+ printf("二つ目の数字を入力してください");
+ scanf("%d",&b);
+
+ c=a/b;
+ printf("%d-%d=%d\n",a,b,c);
+
